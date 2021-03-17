@@ -1,0 +1,233 @@
+body {
+    background-color: #0e0e0e;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+}
+
+nav a {
+    list-style-type: none;
+    color: #838383;
+}
+
+/*into nav*/
+.nav-intro {
+    position: absolute;
+    padding: 10px;
+    margin-top: 526px;
+    margin-left: -26px;
+    color: #838383;
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    /*rotate the word*/
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+/*describe nav*/
+.nav-desc {
+    position: absolute;
+    padding: 10px;
+    margin-top: 700px;
+    margin-left: -26px;
+    color: #838383;
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    /*rotate the word*/
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+/*demonstration nav*/
+.nav-demo {
+    position: absolute;
+    padding: 10px;
+    margin-top: 874px;
+    margin-left: -40px;
+    color: #838383;
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    /*rotate the word*/
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+/*nav text decorations and animations*/
+#theNav a {
+    text-decoration: none;
+}
+
+#theNav a:hover {
+    color: #ffb802;
+    text-decoration: underline 2px;
+}
+
+
+/*background bubble animation*/
+.second-layer{
+    position: absolute;
+    width: 1700px;
+    height: 4000px;
+    background-color: #161616;
+    z-index: -1000;
+    margin-left: 130px;
+}
+
+.bubble1 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 5px solid #FFB802;
+    margin-left: -90px;
+    margin-top: -100px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: #FFB802;
+}
+
+.bubble2 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 3px solid #fff;
+    margin-left: -70px;
+    margin-top: -50px;
+    border-radius: 30% 50% 80% 50% / 30% 70% 40% 70%;
+}
+
+.bubble3 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 5px solid #FFB802;
+    margin-left: 1650px;
+    margin-top: 800px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: #FFB802;
+}
+
+.bubble4 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 3px solid #fff;
+    margin-left: 1650px;
+    margin-top: 700px;
+    border-radius: 30% 50% 80% 50% / 30% 70% 40% 70%;
+    transform: rotate(90deg);
+}
+
+/*introduction section*/
+.model {
+    position: absolute;
+    width: 600px;
+    height: 900px;
+    margin-left: 1150px;
+    margin-top: 50px;
+    background-color: #c4c4c4;
+}
+
+.mainTitle {
+    position: absolute;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 45pt;
+    margin-left: 500px;
+    margin-top: 600px;
+}
+
+.mainTitle a {
+    margin-left: -180px;
+}
+
+.intro-w {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1;
+    color: #ffffff;
+    font-size: 18pt;
+    margin-left: 370px;
+    margin-top: 780px;
+}
+
+/*Description section ->>>all the research goes*/
+.gamerCurrentStastics {
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 400px;
+}
+
+.gamerCurrentStastics-text{
+    width: 600px;
+    height: 700px;
+    background-color: #FFB802;
+    margin-left: 600px;
+}
+
+.gamerCurrentStastics-text h1{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    padding-left: 170px;
+    font-size: 20pt;
+}
+
+.gamerCurrentStastics-text p{
+    width: 500px;
+    padding-top: 120px;
+    padding-left: 45px;
+    font-size: 14pt;
+}
+
+.gamerCurrentStastics-text p2{
+    width: 500px;
+    font-size: 14pt;
+}
+
+.gameMarket{
+    margin-top: 70px;
+}
+
+.gameMarket a{
+    color: #fff;
+    margin: auto auto;
+    font-size: 24pt;
+    margin-left: 500px;
+}
+
+.gameMarket-img{
+    margin-top: 50px;
+    width: 900px;
+    height: 500px;
+    background-color: #777;
+    margin-left: 150px;
+}
+
+/*Demo section*/
+.motiongraphic{
+    width: 1230px;
+    height: 676px;
+    position: absolute;
+    background-color: #777;
+    margin-top: 2900px;
+    margin-left: 350px;
+    margin-bottom: 200px;
+}
+
+
+
+
+
+
+
