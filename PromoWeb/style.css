@@ -1,6 +1,9 @@
 body {
     background-color: #0e0e0e;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 nav {
@@ -17,7 +20,7 @@ nav a {
 .nav-intro {
     position: absolute;
     padding: 10px;
-    margin-top: 526px;
+    margin-top: 400px;
     margin-left: -26px;
     color: #838383;
     font-size: 16pt;
@@ -34,8 +37,8 @@ nav a {
 .nav-desc {
     position: absolute;
     padding: 10px;
-    margin-top: 680px;
-    margin-left: -26px;
+    margin-top: 550px;
+    margin-left: -23px;
     color: #838383;
     font-size: 16pt;
     text-decoration: none;
@@ -51,8 +54,8 @@ nav a {
 .nav-demo {
     position: absolute;
     padding: 10px;
-    margin-top: 844px;
-    margin-left: -40px;
+    margin-top: 730px;
+    margin-left: -39px;
     color: #838383;
     font-size: 16pt;
     text-decoration: none;
@@ -78,62 +81,101 @@ nav a {
 /*background bubble animation*/
 .second-layer {
     position: absolute;
-    width: 1700px;
+    width: 1730px;
     height: 4000px;
     background-color: #161616;
     z-index: -1000;
-    margin-left: 130px;
+    margin-left: 80px;
+    margin-top: -100px;
 }
-
+/*bubble on the right-top*/
 .bubble1 {
     position: absolute;
     width: 350px;
     height: 350px;
-    border: 5px solid #FFB802;
-    margin-left: -90px;
-    margin-top: -100px;
+    border: 5px solid #E7A802;
+    margin-left: 1680px;
+    margin-top: -250px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background-color: #FFB802;
+    background-color: #E7A802;
+    opacity: 80%;
+    animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+     50%{
+        border-radius: 40% 60% 40% 30% / 30% 60% 40% 70%;
+    }
+     100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
 }
 
 .bubble2 {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 260px;
+    height: 260px;
     border: 3px solid #fff;
-    margin-left: -70px;
-    margin-top: -50px;
-    border-radius: 30% 50% 80% 50% / 30% 70% 40% 70%;
+    margin-left: 1655px;
+    margin-top: -155px;
+    border-radius: 30% 50% 80% 50% / 30% 70% 50% 70%;
+    opacity: 70%;
+    transform: rotate(20deg);
+    animation: animate2 5s ease-in-out infinite;
 }
 
+/*bubble in the center*/
 .bubble3 {
     position: absolute;
-    width: 350px;
-    height: 350px;
-    border: 5px solid #FFB802;
-    margin-left: 1650px;
-    margin-top: 800px;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background-color: #FFB802;
+    width: 400px;
+    height: 300px;
+    border: 5px solid #E7A802;
+    margin-left: 700px;
+    margin-top: 150px;
+    border-radius: 30% 70% 70% 40% / 60% 30% 70% 40%;
+    background-color: #E7A802;
+    transform: rotate(-45deg);
+    z-index: -20;
+    opacity: 80%;
+    animation: animate 5s ease-in-out infinite;
 }
 
 .bubble4 {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 300px;
     border: 3px solid #fff;
-    margin-left: 1650px;
-    margin-top: 700px;
-    border-radius: 30% 50% 80% 50% / 30% 70% 40% 70%;
-    transform: rotate(90deg);
+    margin-left: 730px;
+    margin-top: 320px;
+    border-radius: 30% 50% 80% 30% / 30% 70% 40% 70%;
+    transform: rotate(45deg);
+    opacity: 70%;
+    z-index: -20;
+    animation: animate2 5s ease-in-out infinite;
+}
+
+@keyframes animate2{
+    0%{
+        border-radius: 30% 50% 80% 30% / 30% 70% 40% 70%;
+    }
+     50%{
+        border-radius: 50% 30% 30% 80% / 70% 30% 70% 40%;
+    }
+     100%{
+        border-radius: 30% 50% 80% 30% / 30% 70% 40% 70%;
+    }
 }
 
 /*introduction section*/
-.model {
+.scene {
+    display: block;
     width: 600px;
-    height: 900px;
-    margin-left: 300px;
-    margin-top: 50px;
+    height: 830px;
+    margin-left: 200px;
+    margin-top: 100px;
     background-color: #c4c4c4;
 }
 
@@ -141,9 +183,9 @@ nav a {
     position: absolute;
     color: #fff;
     font-family: 'Merriweather', serif;
-    font-size: 45pt;
-    margin-left: 1200px;
-    margin-top: 600px;
+    font-size: 64px;
+    margin-left: 1030px;
+    margin-top: 500px;
 }
 
 .mainTitle a {
@@ -154,22 +196,43 @@ nav a {
     font-family: 'Roboto', sans-serif;
     font-weight: 1;
     color: #ffffff;
-    font-size: 16pt;
-    margin-left: 1010px;
-    margin-top: -100px;
+    font-size: 24px;;
+    margin-left: 930px;
+    margin-top: -140px;
+}
+
+.intro-w a{
+    margin-left: 180px;
 }
 
 /*Description section ->>>all the research goes*/
-.in-betweenBlock {
-    width: 300px;
-    height: 100px;
-    background-color: #161616;
-    margin-left: 200px;
+#nav-desc{
+    margin-top: 200px;
+    padding-top: 20px;
 }
 
+/*Game Accessibility graphs and contents*/
 .gamerCurrentStastics {
-    padding-top: 200px;
+    margin-left: 350px;
+}
+
+.gamerCurrentStastics p3{
+    color: #999;
+    position: absolute;
     margin-left: 300px;
+    margin-top: 260px;
+}
+
+.gamerCurrentStastics p4{
+    color: #999;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 700px;
+}
+
+.gamerCurrentStastics-text i{
+    color: #333;
+    font-size: 12pt;
 }
 
 .gamerCurrentStastics-text {
@@ -199,31 +262,181 @@ nav a {
     font-size: 14pt;
 }
 
+/*Game Market stastics from 2020 to 2026*/
 .gameMarket {
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .gameMarket a {
     color: #fff;
     margin: auto auto;
-    font-size: 24pt;
-    margin-left: 500px;
+    font-size: 60px;
+    font-family: 'Abril Fatface', cursive; 
 }
 
-.gameMarket-img {
-    margin-top: 50px;
-    width: 900px;
-    height: 500px;
-    background-color: #777;
-    margin-left: 150px;
+.gameMarket-line:before{
+    content: "";
+    display: block;
+    width: 800px;
+    height: 2px;
+    margin-left: -150px;
+    margin-top: -33px;
+    background: #fff;
+    position: absolute;
 }
+
+.gameMarket-line a:before{
+    content: "";
+    display: block;
+    width: 800px;
+    height: 2px;
+    margin-left: 1250px;
+    margin-top: -33px;
+    background: #fff;
+    position: absolute;
+}
+
+/*left circle*/
+.gameMarket-circle1{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -33.5px;
+    margin-left: 657px;
+}
+
+.gameMarket-circle1 a{
+    list-style-type: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    margin-left: -7px;
+    margin-top: -7px;
+    border-radius: 50%;
+}
+/*right circle*/
+.gameMarket-circle2{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 1240px;
+    margin-top: -33.5px;
+}
+
+.gameMarket-circle2 a{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: -7px;
+    margin-top: -7px;
+}
+
+/*Game Market Graph*/
+#top_x_div{
+    background-color: #161616;
+    padding: 40px 0px;
+    margin-left: 200px;
+}
+
+.cagr p{
+    margin-top: -40px;
+    margin-left: 250px;
+    color: #fefefe;
+    font-size: 18px;
+}
+
+.cagr b a{
+    font-size: 50px;
+    margin-left: 210px;
+    color: #FFB800;
+}
+
+.cagr b a:before{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    margin-left: 185px;
+    margin-top: 60px;
+    background: #fff;
+    position: absolute;
+}
+    
+
+.detailedContents p{
+    position: absolute;
+    width: 700px;
+    color: #fff;
+    font-size: 14pt;
+    margin-left: 1050px;
+    margin-top: -500px;
+    line-height: 170%;
+}
+
+.detailedContents a{
+    font-size: 14pt;
+}
+
+/*The Barriers*/
+.theBarriers{
+    margin-top: 200px;
+}
+
+.theBarriers-title{
+    color: #fefefe;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    margin-bottom: -25px;
+}
+
+.sectionBackground{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FEFEFE;
+    padding: 50px;
+}
+
+.interactionDiagram img{
+    width: 30%;
+    margin-left: 1083px;
+    margin-top: 150px;
+}
+
+.interactionDiagram a{
+    width: 30%;
+    margin-left: 1083px;
+    margin-top: 150px;
+}
+
+
 
 /*Demo section*/
 .motiongraphic {
-    width: 1230px;
+    width: 1730px;
     height: 676px;
     background-color: #777;
     margin-top: 100px;
-    margin-left: 350px;
     margin-bottom: 200px;
+    margin-left: 80px;
+}
+
+
+/*make it Responsive*/
+/*Tutorial: https://www.youtube.com/watch?v=ZFQkb26UD1Y&ab_channel=WEBCIFAR*/
+@media screen and (max-width:768px){
+    .mainPresentaion{
+        flex-direction: column;
+    }
+    #nav-intro{
+        margin-top: 5vh;
+        text-align: center;
+    }
 }
